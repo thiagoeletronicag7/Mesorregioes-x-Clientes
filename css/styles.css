@@ -1,0 +1,83 @@
+/* Estilo geral do container */
+#container {
+    display: flex;
+}
+
+/* Estilo da barra lateral */
+#sidebar {
+    width: 400px; /* Ajuste o tamanho conforme necessário */
+    padding: 20px;
+    background-color: #f4f4f4; /* Cor de fundo da barra lateral */
+    border-right: 2px solid #ccc; /* Linha separadora */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Sombra leve para destaque */
+    position: relative;
+}
+
+/* Estilo do título */
+#sidebar h1 {
+    font-family: 'Arial', sans-serif; /* Alterar a fonte */
+    font-size: 30px;
+    color: #333; /* Cor do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilo dos parágrafos */
+#nomes-mesorregioes p {
+    display: none;
+    font-family: 'Verdana', sans-serif; /* Alterar a fonte */
+    font-size: 28px;
+    color: #555; /* Cor dos textos */
+    margin: 10px 0; /* Espaço entre os parágrafos */
+    cursor: pointer; /* Mostrar que o texto é interativo */
+    margin-top: 80px; /* Ajuste o valor conforme necessário */
+}
+
+.region-hovered + #nomes-mesorregioes p {
+    display: block;
+}
+
+/* Efeito de hover para os parágrafos */
+#nomes-mesorregioes p:hover {
+    color: #000; /* Cor ao passar o mouse */
+}
+
+#logo {
+    position: absolute; /* Fixa a posição da logo */
+    bottom: 300px; /* Ajuste a distância da parte inferior conforme necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centralizar corretamente */
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 200px; /* Define uma largura máxima */
+}
+
+/* Estilo do container do mapa */
+#map-container {
+    flex-grow: 1; /* O mapa ocupa o espaço restante */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do SVG */
+svg {
+    width: 80%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+/* Estilo do tooltip */
+.tooltip {
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+svg path.hover {
+    filter: brightness(1.8); /* Aumenta o brilho em 20% */
+    transition: filter 0.8s ease; /* Transição suave */
+}

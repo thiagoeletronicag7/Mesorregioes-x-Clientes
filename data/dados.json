@@ -1,0 +1,14 @@
+[
+  {"region": "Metropolitana de Belo Horizonte", "clients": 10000},
+  {"region": "Zona da Mata", "clients": 5000},
+  {"region": "Noroeste de Minas", "clients": 4500},
+  {"region": "Norte de Minas", "clients": 4000},
+  {"region": "Jequitinhonha", "clients": 3500},
+  {"region": "Vale do Mucuri", "clients": 3000},
+  {"region": "Triangulo Mineiro", "clients": 2500},
+  {"region": "Central Mineira", "clients": 2000},
+  {"region": "Vale do Rio Doce", "clients": 1500},
+  {"region": "Oeste de Minas", "clients": 1000},
+  {"region": "Sul", "clients": 500},
+  {"region": "Campo das Vertentes", "clients": 50}
+]
